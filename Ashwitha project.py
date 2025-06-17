@@ -55,4 +55,4 @@ if 'customerID' in df.columns and 'churn' in df.columns:
     y = df['churn']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 else:
-    print("Either 'customerID' or 'churn' column does 
+    print("Either 'customerID' or 'churn' column does not exist in the DataFrame.")
